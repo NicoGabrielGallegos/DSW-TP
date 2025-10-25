@@ -1,10 +1,13 @@
 # Modelo Relacional
 Las siguientes relaciones (tablas) fueron obtenidas a partir del [Modelo Entidad-Relación](/docs/Modelo_Entidad-Relacion.png) mostrado en el archivo [proposal.md](/proposal.md)
 
-Alumnos(**legajoAlumno**, nombre, apellido, correo) \
+Administradores(nombre, apellido, **correo**) \
+&nbsp;&nbsp;&nbsp;&nbsp;correo → CP
+
+Alumnos(**legajoAlumno**, nombre, apellido, correo, password) \
 &nbsp;&nbsp;&nbsp;&nbsp;legajoAlumno → CP
 
-Docentes(**legajoDocente**, nombre, apellido, correo) \
+Docentes(**legajoDocente**, nombre, apellido, correo, password) \
 &nbsp;&nbsp;&nbsp;&nbsp;legajoDocente → CP
 
 Materias(**idMateria**, descripcion) \
